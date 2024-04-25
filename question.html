@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top reasons u should go out with me</title>
+</head>
+<body style="height: 100vh; width: 100vw; text-align: center; padding: 0; margin: 0;">
+    <div style="padding: 5px;">
+        <h1 style="text-align: center; margin: 0">so will you be my girlfriend?</h1>
+        <button id="yes">yes</button>
+        <button id="no" style="transition: all 0.5s;">no</button>
+        <script>
+            no_btn = document.getElementById("no")
+            no_btn.onmouseover = () => {
+                no_btn.style.position = "absolute"
+                no_btn.style.top = `${Math.random()*100}%`
+                no_btn.style.right = `${Math.random()*100}%`
+            }
+
+            yes_btn = document.getElementById("yes")
+            yes_btn.onclick = () => {
+                document.location.href = "./yes.html"
+            }
+        </script>
+    </div>
+</body>
+</html>
